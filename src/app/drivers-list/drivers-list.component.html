@@ -1,3 +1,31 @@
 <h1 class="my-5">
     Nos Pilotes
 </h1>
+
+
+<h2>Event Binding Exemples</h2>
+
+
+<button  class="btn btn-info my-5 shadow">
+    Clickez moi !
+</button>
+
+<h3 (mouseover)="onSurvol()" class="bg-warning w-50 p-4">Survolez moi</h3>
+
+<input type="text d-block" (blur)="onSurvol()">
+<br>
+<br>
+<br>
+
+
+<h4>Exemple 4</h4>
+
+<input class="form-group" #input type="text">
+
+<br>
+
+<button (click)="onClickButton(input.value)" class="btn btn-danger">    Envoyer
+</button>   
+
+
+<img class="col-6" [src]="input.value" alt="">
