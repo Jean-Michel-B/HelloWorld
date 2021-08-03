@@ -7,46 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsListComponent implements OnInit {
 
+  enfantUn:string= "Bird";
 
-  coverImage:string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyf6QztqepSgrVR_tiqX96bcNQz1E6AytTH99zqr6fvAGSP0X45yfcuh-1EIVv2lsAwEU&usqp=CAU"
+  enfantDeux:string = "Fille";
 
-
-
-  // 1er exemple d'interpolation
-  // Type string int ou n'importe
-  mardiMatin:any = "Ils ont l'air bien OFF"
-
-  // 2eme exemple objet ou propriete
-  game: any =  {
-
-    title:"Among Us",
-    support: "Android",
-    multi: 10
-
-  }
-
-  userEmail="jeanmichel@symfonix.com"
-  
-
-  age:number = 13 
+  enfantTrois:string = "Garçon";
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // Intepolation du retour d'une methode
-  getStock(){
-    return 2050;
-  }
-
-  isNotAvailable(){
-    return true;
-  }
-
-  // Appel a une methode pour toutes sortes de traitements
-  getWakeUp(){
-    console.log("Silence de cathédrale Andalou")
-  }
 
 }
