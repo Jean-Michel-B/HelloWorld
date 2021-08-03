@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsListComponent implements OnInit {
 
-  game:any = {
-    title: "Jeux d'echec",
-    joueurs: 2
-  }
+  carUpdate:any;
 
   vehiculeOne:any = {
     name: "Mercedes 6.3 AMD",
@@ -27,7 +24,8 @@ export class CarsListComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.carUpdate = new Date();
   }
 
 }
