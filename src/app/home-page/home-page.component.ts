@@ -9,6 +9,8 @@ export class HomePageComponent implements OnInit {
 
   title:string = "Drive-X";
 
+  userName:any;
+
   constructor() { }
 
   ngOnInit(): void {
