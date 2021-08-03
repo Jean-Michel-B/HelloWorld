@@ -7,14 +7,22 @@
 
 {{age }} ans age legal de...
 
+<h2>Property Binding - Bind = Lié...</h2>
 
 
-
-<div class="border p-2 bg-dark text-white">
+<div class=" text-center shadow border p-5 bg-info text-white">
     <h1>{{ game.title }}</h1>
     <p>Support: {{ game.support }} </p>
     <p>Multi: {{ game.multi }} joueurs</p>
     <p>Stock: {{ getStock()  }} en stocks</p>
+
+    <img [src]="coverImage" alt="{{ game.title}}">
+
+    <button class="my-3 btn btn-success" [disabled]="isNotAvailable()">
+        Commander
+    </button>
+
+    <input class="form-control" type="text" [value]="userEmail" >
 </div>
 
 
