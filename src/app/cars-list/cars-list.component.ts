@@ -9,18 +9,25 @@ export class CarsListComponent implements OnInit {
 
   carUpdate:any;
 
-  vehiculeOne:any = {
-    name: "Mercedes 6.3 AMD",
-    price: 33000
+  carOne:any = {
+    name: "pagani huayra",
+    pays: "italie",
+    power: "765",
+    perf: 3.2
   }
-  vehiculeTwo:any = {
-    name: "Peugeot 80ti RTX",
-    price: 3500
+  carTwo:any = {
+    name: "koenigsegg agera rs",
+    pays: "suède",
+    power: 1383,
+    perf: 2.6
   }
-  vehiculeThree:any = {
-    name: "Citroën Ryzen",
-    price: 2050
+  carThree:any = {
+    name: "zenvo tsr s",
+    pays: "danemark",
+    power: "1200",
+    perf: 2.8
   }
+  
 
   constructor() { }
 
