@@ -20,7 +20,7 @@ export class CarItemComponent implements OnInit {
 
   onBooking(){
     this.isBooked = true;
-    this.bookingMessage = " Cette voiture est réservée ! "
+    this.bookingMessage = " Cette voiture est réservée !";
   }
 
   
