@@ -9,6 +9,12 @@ export class DriversListComponent implements OnInit {
 
   isOnline:boolean = true;
 
+  book:any = {
+    title:"Le secret des Croisades",
+    author: "Thomadreas",
+    price: null
+  }
+
   constructor() { }
 
   ngOnInit(): void {

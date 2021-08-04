@@ -4,10 +4,15 @@
 
 <div *ngIf="isOnline" class="p-5 card bg-info">
 
-    <p >
-    
-        Thomas a dit à Andrea que...
-    
+    <h2>
+       {{book.title}}
+    </h2>
+
+    <p>{{ book.author }}</p>
+    <p> 
+        <span *ngIf="book.price"> prix: {{book.price}} € </span>
+
+        <span *ngIf="book.price == null"> Non communiqué</span>
     </p>
 
 </div>
