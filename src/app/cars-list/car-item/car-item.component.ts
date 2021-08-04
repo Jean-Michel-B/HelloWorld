@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CarItemComponent implements OnInit {
 
   bookingMessage:string = "Réserver maintenant !";
-  
+
   isBooked:boolean = false ;
 
   @Input() car:any;
@@ -21,7 +21,6 @@ export class CarItemComponent implements OnInit {
   onBooking(){
     this.isBooked = true;
     this.bookingMessage = " Cette voiture est réservée ! "
-
   }
 
   
