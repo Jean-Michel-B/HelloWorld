@@ -1,9 +1,10 @@
 <div>
-    <p>{{car.name}}</p>
-    <p>Origine: {{car.pays}}</p>
+    <p>{{car.name | titlecase  }}</p>
+    <p>Origine: {{car.pays | uppercase }}</p>
     <p>0 à 100 km/h : {{car.perf}} sec </p>
     <p>Puissance: {{car.power}} CH</p>
     <p>{{ bookingMessage }}</p>
     <button class="btn btn-success" (click)="onBooking()" [disabled]="isBooked">Réserver</button>
     <hr>
 </div>
+
