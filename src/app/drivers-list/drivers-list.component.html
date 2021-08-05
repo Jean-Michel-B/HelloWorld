@@ -2,38 +2,3 @@
     Nos Pilotes
 </h1>
 
-<p [ngClass]="{'text-center':true}" >
-    Un span quoi ! NgClass 😎 !
-</p>
-
-
-<div class="card shadow text-center">
-
-    <h2> {{ product.label }}</h2>
-
-    <hr>
-
-    <p>{{product.price}} €</p>
-
-
-    <p>quantité:
-        <span class="badge"[ngClass]="{
-           
-            'badge-success': product.stock > 5,
-
-            'badge-warning': product.stock <= 5,
-            
-            'badge-danger': product.stock ==  0
-        }">
-            {{ product.stock }} en stocks
-        </span>
-    </p>
-
-
-
-</div>
-
-<p [ngClass]="{'text-center':onOff}">
-    Style editeur de texte live, façon FaceBook Snap ect...</p>
-
-    <button (click)="onSwitch()" class="btn btn-warning">Centrer</button>
