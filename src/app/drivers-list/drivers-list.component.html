@@ -2,43 +2,38 @@
     Nos Pilotes
 </h1>
 
-
-<p [style.color]="colorOne">
-    Style.color et une couleur en props !
+<p [ngClass]="{'text-center':true}" >
+    Un span quoi ! NgClass 😎 !
 </p>
 
-<p [style.background-color]="getCouleur()">
-    Style.color fonctionne aussi avec une méthode !
-</p>
 
-<p [style.color]=" 'red' ">
-    Style.color ou comme ça mais pas fou...(ouf)
-</p>
+<div class="card shadow text-center">
 
-<h3 [style.background-color]="onOff ? colorOne : getCouleur() ">
+    <h2> {{ product.label }}</h2>
 
-    ça part en live ou c'est moi ???
-    Donc si on mix tout !
-    GEnre databinding + Directives...
+    <hr>
 
-</h3>
+    <p>{{product.price}} €</p>
 
-<button (click)="onSwitch()" class="btn btn-info my-5">
-    <span *ngIf="!onOff"> ON 🙄</span>
-    <span *ngIf="onOff"> OFF 😎</span>
-</button>
 
-<div [ngStyle]="{   color:colorOne, 
-                    margin:marginPts,   
-                    padding:'20px',
-                    backgroundColor:onOff ? colorOne : getCouleur() 
-                }">
+    <p>quantité:
+        <span class="badge"[ngClass]="{
+           
+            'badge-success': product.stock > 5,
 
-    et du NgStyle la difference ?
-    Declare un objet dedans...hum...hum
-    Donc on peut en mettre plusieurs...DONC PLUS DE POSSIBILTés !
+            'badge-warning': product.stock <= 5,
+            
+            'badge-danger': product.stock ==  0
+        }">
+            {{ product.stock }} en stocks
+        </span>
+    </p>
+
+
+
 </div>
 
-<p style="border: solid 2px green;"> Cool</p>
+<p [ngClass]="{'text-center':onOff}">
+    Style editeur de texte live, façon FaceBook Snap ect...</p>
 
-PK l'un ou l'autre ?
+    <button (click)="onSwitch()" class="btn btn-warning">Centrer</button>

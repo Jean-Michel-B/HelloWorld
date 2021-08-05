@@ -12,16 +12,17 @@ export class DriversListComponent implements OnInit {
 
   onOff:boolean= true;
 
-  marginPts:string = "50px";
+  product:any = {
+    label: "iphone 12",
+    price: 1255899990,
+    stock: 0
+  }
 
   
   ngOnInit(): void {
   }
   constructor() { }
 
-  getCouleur(){
-    return "green";
-  }
 
   onSwitch(){
     if(this.onOff)
@@ -32,10 +33,5 @@ export class DriversListComponent implements OnInit {
    
   }
 
-  // condition ? "dans ce cas" : "dans l'autre cas"
-truc(){
-  if (true) 
-    return "dans ce cas"
-  else 
-    return "dans l'autre cas"}
+
 }
