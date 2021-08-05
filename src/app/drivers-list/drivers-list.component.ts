@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DriversListComponent implements OnInit {
 
 
-  games:string[] = ["PES06", "MineCraft", "Shenmue", "Evil Dead"];
+  games:string[] = ["Halo Infinite", "Gow 5", "Forza 12", "States Of Decay 2", "Ori"];
 
   constructor() { }
 
