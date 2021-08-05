@@ -3,14 +3,42 @@
 </h1>
 
 
-<ul>
-    <li *ngFor="let game of games">
-        {{game}}
-    </li>
-</ul>
-
-<p *ngFor="let x of games ; let i = index">  
-   {{ i  }} {{ x | uppercase}}
-
-
+<p [style.color]="colorOne">
+    Style.color et une couleur en props !
 </p>
+
+<p [style.background-color]="getCouleur()">
+    Style.color fonctionne aussi avec une méthode !
+</p>
+
+<p [style.color]=" 'red' ">
+    Style.color ou comme ça mais pas fou...(ouf)
+</p>
+
+<h3 [style.background-color]="onOff ? colorOne : getCouleur() ">
+
+    ça part en live ou c'est moi ???
+    Donc si on mix tout !
+    GEnre databinding + Directives...
+
+</h3>
+
+<button (click)="onSwitch()" class="btn btn-info my-5">
+    <span *ngIf="!onOff"> ON 🙄</span>
+    <span *ngIf="onOff"> OFF 😎</span>
+</button>
+
+<div [ngStyle]="{   color:colorOne, 
+                    margin:marginPts,   
+                    padding:'20px',
+                    backgroundColor:onOff ? colorOne : getCouleur() 
+                }">
+
+    et du NgStyle la difference ?
+    Declare un objet dedans...hum...hum
+    Donc on peut en mettre plusieurs...DONC PLUS DE POSSIBILTés !
+</div>
+
+<p style="border: solid 2px green;"> Cool</p>
+
+PK l'un ou l'autre ?
