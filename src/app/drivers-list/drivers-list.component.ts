@@ -7,13 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriversListComponent implements OnInit {
 
-  isOnline:boolean = true;
 
-  book:any = {
-    title:"Le secret des Croisades",
-    author: "Thomadreas",
-    price: null
-  }
+  games:string[] = ["PES06", "MineCraft", "Shenmue", "Evil Dead"];
 
   constructor() { }
 
