@@ -11,8 +11,6 @@ export class DriverItemComponent implements OnInit {
 
   constructor() { }
 
-  
-
   ngOnInit(): void {
     
   }
