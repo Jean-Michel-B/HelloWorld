@@ -2,6 +2,7 @@ import { NgModule , LOCALE_ID} from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
@@ -15,10 +16,10 @@ import { DriversListComponent } from './drivers-list/drivers-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { CarItemComponent } from './cars-list/car-item/car-item.component';
-import { FormsModule } from '@angular/forms';
 import { DriverItemComponent } from './drivers-list/driver-item/driver-item.component';
 
 import { BananeService } from './services/banane.service';
+import { RestaurantService } from './services/restaurant.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BananeService } from './services/banane.service';
     FormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: "fr-FR" } ,
-              BananeService],
+              BananeService,
+              RestaurantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

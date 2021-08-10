@@ -70,6 +70,7 @@ export class DriversListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
