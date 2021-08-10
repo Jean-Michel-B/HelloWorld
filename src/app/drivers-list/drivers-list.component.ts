@@ -12,11 +12,11 @@ export class DriversListComponent implements OnInit {
       fullName: "ken block",
       pays: "usa",
       coverImage: "./assets/img/drivers/kenblock.jpg",
-      category: "gymkhana",
+      category: "gymkhana", 
       likeIts: -1
     },
     {
-      fullName: "danica patrick",
+      fullName: "danIca patricK",
       pays: "usa",
       coverImage: "./assets/img/drivers/danicapatrick.jpg",
       category: "nascar",

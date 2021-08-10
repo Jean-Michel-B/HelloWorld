@@ -14,7 +14,16 @@ export class DriverItemComponent implements OnInit {
   
 
   ngOnInit(): void {
-    console.log(this.driver);
+    
+  }
+
+
+  onLike(){
+    this.driver.likeIts++
+  }
+
+  onUnlike(){
+    this.driver.likeIts--;
   }
 
 }
