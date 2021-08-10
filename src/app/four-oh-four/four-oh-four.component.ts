@@ -13,7 +13,7 @@ export class FourOhFourComponent implements OnInit {
   ngOnInit(): void {
     setTimeout( () => {
       this.router.navigate(['/'])
-    } , 4000)
+    } , 5000)
   }
 
 }
