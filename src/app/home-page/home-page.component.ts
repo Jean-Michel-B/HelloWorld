@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Car } from '../models/Car';
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class HomePageComponent implements OnInit {
   title:string = "Drive-X";
 
   bestdDrivers:any;
-  bestCars:any;
+  bestCars:Car[] | undefined;
 
   constructor(private data:DataService) { }
 

@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { Car } from "../models/Car";
 
 @Injectable()
 export class DataService{
@@ -63,7 +64,7 @@ export class DataService{
         
       ];
 
-    cars: any = [
+    cars: Car[] = [
         {
           name: "pagani huayra",
           pays: "italie",
@@ -127,7 +128,7 @@ export class DataService{
     
       }
     
-      getNbPowerfullCars(nb:number){
+      getNbPowerfullCars(nb:number):Car[] {
     
         var allCars = this.cars.slice();
 
