@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { DriverItemComponent } from './drivers-list/driver-item/driver-item.component';
 import { DataService } from './services/data.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { DataService } from './services/data.service';
     FormsModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: "fr-FR" },
-              DataService],
+              DataService
+            ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
